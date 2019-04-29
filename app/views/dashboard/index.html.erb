@@ -1,0 +1,191 @@
+<div class="container body">
+  <div class="main_container col-md-12 col-sm-12 col-xs-12">
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="dashboard_graph">
+
+          <div class="col-md-12 col-sm-12 col-xs-12 bg-white">
+            <div class="x_title">
+              <h2>Music Types</h2>
+              <div class="clearfix"></div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-6">
+              <div>
+                <% @youtube = (@dashboard.stats[:music][:youtube].to_f * 100 / @dashboard.stats[:music][:total].to_f).to_f %>
+                <p>Youtube (<%= number_with_precision(@youtube, precision: 2) %>%)</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 100%;">
+                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="<%= @youtube %>"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <% @spotify = (@dashboard.stats[:music][:spotify].to_f * 100 / @dashboard.stats[:music][:total].to_f).to_f %>
+                <p>Spotify (<%= number_with_precision(@spotify, precision: 2) %>%)</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 100%;">
+                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="<%= (@dashboard.stats[:music][:spotify].to_f * 100 / @dashboard.stats[:music][:total].to_f).to_f %>"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-6">
+              <div>
+                <% @soundcloud = (@dashboard.stats[:music][:soundcloud].to_f * 100 / @dashboard.stats[:music][:total].to_f).to_f %>
+                <p>SoundCloud (<%= number_with_precision(@soundcloud, precision: 2) %>%)</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 100%;">
+                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="<%= @soundcloud %>"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <% @shazam = (@dashboard.stats[:music][:shazam].to_f * 100 / @dashboard.stats[:music][:total].to_f).to_f %>
+                <p>Shazam (<%= number_with_precision(@shazam, precision: 2) %>%)</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 100%;">
+                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="<%= @shazam %>"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <% @mixcloud = (@dashboard.stats[:music][:mixcloud].to_f * 100 / @dashboard.stats[:music][:total].to_f).to_f %>
+                <p>Mixcloud (<%= number_with_precision(@mixcloud, precision: 2) %>%)</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 100%;">
+                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="<%= @mixcloud %>"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+
+    </div>
+    <br />
+
+    <div class="row tile_count">
+      <div class="col-md-3 col-sm-3 col-xs-12 tile_stats_count">
+        <div class="x_panel tile">
+          <div class="x_content">
+            <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
+            <div class="count"><%= number_with_delimiter(@dashboard.stats[:users][:total]) %></div>
+            <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i><%= @dashboard.stats[:users][:seven_days] %></i> From last Week</span>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-3 col-xs-12 tile_stats_count">
+        <div class="x_panel tile">
+          <div class="x_content">
+            <span class="count_top"><i class="fa fa-user"></i> Total Facebook Pages</span>
+            <div class="count"><%= number_with_delimiter(@dashboard.stats[:artists][:facebook_artists]) %></div>
+            <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i><%= @dashboard.stats[:artists][:facebook_artists_seven_days] %></i> From last Week</span>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-3 col-xs-12 tile_stats_count">
+        <div class="x_panel tile">
+          <div class="x_content">
+            <span class="count_top"><i class="fa fa-user"></i> Total Verified Artists</span>
+            <div class="count"><%= number_with_delimiter(@dashboard.stats[:artists][:verified_artists]) %></div>
+            <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i><%= @dashboard.stats[:artists][:verified_artists_seven_days] %></i> From last Week</span>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-3 col-xs-12 tile_stats_count">
+        <div class="x_panel tile">
+          <div class="x_content">
+            <span class="count_top"><i class="fa fa-user"></i> Total Feeds</span>
+            <div class="count"><%= number_with_delimiter(@dashboard.stats[:timelines][:total]) %></div>
+            <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i><%= @dashboard.stats[:timelines][:seven_days] %></i> From last Week</span>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="x_panel col-md-12 col-sm-12 col-xs-12">
+          <div class="x_title">
+            <h2>Recent Feeds</h2>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+            <div class="dashboard-widget-content">
+
+              <ul class="list-unstyled timeline widget">
+                <% @dashboard.recent.each do |timeline| %>
+                  <li>
+                    <div class="block">
+                      <div class="block_content">
+                        <h2 class="title">
+                          <%= image_tag timeline.picture, width: 32, height: 32 %>
+                          <a href='<%= timeline.accessible_link %>'><%= timeline.name %> (<%= timeline.feed_type %>)</a>
+                        </h2>
+                        <div class="byline">
+                          <span><%= time_ago_in_words(timeline.created_at || DateTime.now) %></span> by <a><%= timeline.publishers.sort_by { |a| a.created_at || DateTime.now }.last.name %></a>
+                        </div>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="x_panel col-md-12 col-sm-12 col-xs-12">
+          <div class="x_title">
+            <h2>Recent Artists</h2>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+            <div class="dashboard-widget-content">
+
+              <ul class="list-unstyled timeline widget">
+                <% @dashboard.recent_artists.each do |user| %>
+                  <li>
+                    <div class="block">
+                      <div class="block_content">
+                        <h2 class="title">
+                          <a href="<%= user.facebook_link %>"><%= user.name %></a>
+                        </h2>
+                        <div class="byline">
+                          <span>number of feeds: <%= user.timelines_count %></span>
+                        </div>
+                        <div class="byline">
+                          <span><%= time_ago_in_words(user.created_at) %></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                <% end %>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

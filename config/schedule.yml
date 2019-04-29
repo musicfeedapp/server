@@ -1,0 +1,29 @@
+dashboard_worker:
+  cron: "30 * * * *"
+  class: "ReportWorker"
+  queue: heavy
+
+ping_worker:
+  cron: "* * 1 * *"
+  class: "PingWorker"
+  queue: heavy
+
+artists_daily:
+  cron: "* * 1 * *"
+  class: "Facebook::Feed::ArtistWorker"
+  queue: aggregator
+
+artists_hourly:
+  cron: "* 1 * * *"
+  class: "Facebook::Feed::HourlyArtistWorker"
+  queue: aggregator
+
+feed_counter:
+  cron: "* * 1 * *"
+  class: "UpdateFeedAppIconCountWorker"
+  queue: heavy
+
+views:
+  cron: "* * 1 * *"
+  class: "SuggestionsWorker"
+  queue: heavy

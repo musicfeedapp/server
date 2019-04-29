@@ -1,0 +1,35 @@
+production:
+  facebook:
+    id: "<%= ENV["FACEBOOK_ID"] %>"
+    secret: "<%= ENV['FACEBOOK_SECRET'] %>"
+    categories_test_app_id: "<%= ENV['CATEGORIES_FACEBOOK_ID'] %>"
+    categories_test_app_secret: "<%= ENV['CATEGORIES_FACEBOOK_SECRET'] %>"
+  google:
+    id: ""
+    secret: ""
+  linkedin:
+    id: ""
+    secret: ""
+  redis:
+    url: "<%= ENV['REDIS_URL'] %>"
+  soundcloud:
+    id: ""
+    secret: ""
+  spotify:
+    id: ""
+    secret: ""
+    callback: ""
+  lastfm:
+    api_key: ''
+    secret: ''
+  elasticsearch:
+    host: ""
+    timeout: 5
+  affiliate_id: ""
+  youtube:
+    developer_key: ''
+    youtube_api_service_name: ''
+    youtube_api_version: ''
+    application_name: ""
+    application_version: ""
+    log_level: WARN

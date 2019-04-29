@@ -1,0 +1,3 @@
+collection @songs
+
+attributes :id

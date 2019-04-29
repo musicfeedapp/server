@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= csrf_meta_tags %>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.13/plyr.css">
+
+    <title>Dashboard</title>
+  </head>
+
+  <body class="nav-md">
+    <%= yield %>
+
+    <%= javascript_include_tag 'application' %>
+    <script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
+    <script type='text/javascript'>plyr.setup();</script>
+  </body>
+</html>

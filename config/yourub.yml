@@ -1,0 +1,31 @@
+yourub_defaults: &yourub_defaults
+  developer_key: 'AIzaSyAhXJcYxtBq7cJqh1oKNb1wIefoocMwcTQ'
+  youtube_api_service_name: 'youtube'
+  youtube_api_version: 'v3'
+  application_name: "yourub"
+  application_version: "0.1"
+  log_level: WARN
+
+development:
+  developer_key: 'AIzaSyAhXJcYxtBq7cJqh1oKNb1wIefoocMwcTQ'
+  youtube_api_service_name: 'youtube'
+  youtube_api_version: 'v3'
+  application_name: "yourub"
+  application_version: "0.1"
+  log_level: WARN
+
+production:
+  developer_key: 'AIzaSyAhXJcYxtBq7cJqh1oKNb1wIefoocMwcTQ'
+  youtube_api_service_name: 'youtube'
+  youtube_api_version: 'v3'
+  application_name: "yourub"
+  application_version: "0.1"
+  log_level: WARN
+
+test:
+  developer_key: 'AIzaSyAhXJcYxtBq7cJqh1oKNb1wIefoocMwcTQ'
+  youtube_api_service_name: 'youtube'
+  youtube_api_version: 'v3'
+  application_name: "yourub"
+  application_version: "0.1"
+  log_level: WARN

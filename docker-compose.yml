@@ -1,0 +1,37 @@
+version: "2"
+
+services:
+  elasticsearch:
+    image: elasticsearch:latest
+    container_name: musicfeedserver_elasticsearch
+    ports: ["9200"]
+    networks:
+      - back-tier
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: musicfeedserver_rabbitmq
+    ports: ["5672", "15672"]
+    networks:
+      - back-tier
+
+  redis:
+    image: redis:alpine
+    container_name: musicfeedserver_redis
+    ports: ["6379"]
+    networks:
+      - back-tier
+
+  db:
+    image: postgres:9.4
+    container_name: musicfeedserver_db
+    volumes:
+      - "db-data:/var/lib/postgresql/data"
+    networks:
+      - back-tier
+
+volumes:
+  db-data:
+
+networks:
+  back-tier:

@@ -1,0 +1,27 @@
+development:
+  spotify:
+    id: "spotify-ios-sdk-beta"
+    secret: ""
+    callback: ""
+  soundcloud:
+    id: key
+    secret: secret
+  youtube:
+    dev_key: <dev key>
+  facebook:
+    id: ""
+    secret: ""
+  google:
+    id: ""
+    secret: ""
+  linkedin:
+    id: ""
+    secret: ""
+  email:
+    host: "smtp.gmail.com"
+    port: 587
+    domain: "gmail.com"
+    username: ""
+    password: ""
+    support_address: ""
+    subject: ""

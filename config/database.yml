@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: musicfeed_dev
+
+test:
+  adapter: postgresql
+  database: musicfeed_test

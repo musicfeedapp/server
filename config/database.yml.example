@@ -1,0 +1,14 @@
+development:
+  adapter: postgresql
+  database: feedler_development
+  host: localhost
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+
+test:
+  adapter: postgresql
+  database: feedler_test
+  host: localhost
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+

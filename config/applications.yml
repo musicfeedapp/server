@@ -1,0 +1,11 @@
+production:
+  facebook:
+    applications:
+
+test:
+  facebook:
+    applications:
+
+development:
+  facebook:
+    applications:

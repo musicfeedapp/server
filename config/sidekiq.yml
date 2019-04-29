@@ -1,0 +1,8 @@
+---
+:concurrency: 20
+production:
+  :concurrency: 50
+staging:
+  :concurrency: 10
+:queues:
+  - storage

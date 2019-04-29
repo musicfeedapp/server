@@ -1,0 +1,40 @@
+{
+    "comments": {
+        "data": "[{\"id\"=>\"10152933483060784_10152942757285784\", \"from\"=>{\"id\"=>\"10152810999026619\", \"name\"=>\"Linda H. Ishak\"}, \"message\"=>\"a great taste of music\", \"can_remove\"=>\"false\", \"created_time\"=>\"2015-05-27T10:23:04+0000\", \"like_count\"=>\"0\", \"user_likes\"=>\"false\"}]",
+        "paging": {
+            "cursors": {
+                "after": "MTA0",
+                "before": "MTA0"
+            },
+            "next": "https://graph.facebook.com/v2.3/116695575013321_1100664949949707/comments?order=chronological&limit=1&summary=true&access_token=CAAHHZBahuow0BAAptZAsBahWpWKdwzUnuMUZBWpe9DePVqWOkRK6h8NeThtkTx87gfAl6OZAFCy1ffeRH0VhTbvZB6BZBeL7I3oq0YYCOXyrz12WoZBghir8FupnrXko4ZBZBuAS2xN9dAOVfvMAybS12VzPadvGde8e4QEVn9YUwza671Dv9bZAnzJZAwH2X2BbLUZD&after=MTA0"
+        },
+        "summary": {
+            "order": "ranked",
+            "total_count": "104"
+        }
+    },
+    "created_time": "2015-05-26T17:56:57+0000",
+    "description": "One of the best remixes I have ever heard in my life by Jon Hopkins Coldplay #TrackOfTheWeek\n\nhttps://www.youtube.com/watch?v=3dTGDvNwaEw",
+    "from": {
+        "category": "Musician/Band",
+        "id": "283268980783",
+        "name": "Hassan El Shafei"
+    },
+    "id": "116695575013321_1100664949949707",
+    "likes": {
+        "data": "[{\"id\"=>\"1451862325134949\", \"name\"=>\"Princess Lara\"}]",
+        "paging": {
+            "cursors": {
+                "after": "MTQ1MTg2MjMyNTEzNDk0OQ==",
+                "before": "MTQ1MTg2MjMyNTEzNDk0OQ=="
+            },
+            "next": "https://graph.facebook.com/v2.3/116695575013321_1100664949949707/likes?limit=1&summary=true&access_token=CAAHHZBahuow0BAAptZAsBahWpWKdwzUnuMUZBWpe9DePVqWOkRK6h8NeThtkTx87gfAl6OZAFCy1ffeRH0VhTbvZB6BZBeL7I3oq0YYCOXyrz12WoZBghir8FupnrXko4ZBZBuAS2xN9dAOVfvMAybS12VzPadvGde8e4QEVn9YUwza671Dv9bZAnzJZAwH2X2BbLUZD&after=MTQ1MTg2MjMyNTEzNDk0OQ%3D%3D"
+        },
+        "summary": {
+            "total_count": "2740"
+        }
+    },
+    "link": "https://www.youtube.com/watch?v=3dTGDvNwaEw",
+    "name": "Hassan El Shafei",
+    "picture": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQBm2Wbx8gNnIKD6&w=130&h=130&url=http%3A%2F%2Fi.ytimg.com%2Fvi%2F3dTGDvNwaEw%2Fhqdefault.jpg&cfs=1"
+}
