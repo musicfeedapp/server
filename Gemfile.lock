@@ -572,7 +572,7 @@ GEM
     puma (3.6.2)
     rabl (0.13.1)
       activesupport (>= 2.3.14)
-    rack (1.6.8)
+    rack (1.6.12)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-cache (1.6.1)
@@ -781,7 +781,7 @@ DEPENDENCIES
   pry-rails
   pry-remote
   puma
-  rack (~> 1.6.0)
+  rack (~> 1.6.12)
   rack-cache
   rack-test
   rails (= 4.2.8)
