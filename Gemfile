@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.3'
 
-gem 'rack', '~> 1.6.0'
+gem 'rack', '~> 1.6.12'
 gem 'rails', '4.2.8'
 gem 'uglifier'
 gem 'sendgrid'
